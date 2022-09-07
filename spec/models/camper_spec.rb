@@ -21,20 +21,20 @@ RSpec.describe Camper, type: :model do
   
   end
 
-  describe "validations" do
+  # describe "validations" do
 
-    it "must have a name" do
-      expect(Camper.create(name: 'Caitlin', age: 8)).to be_valid
-      expect(Camper.create(age: 8)).to be_invalid
-    end
+  #   it "must have a name" do
+  #     expect(Camper.create(name: 'Caitlin', age: 8)).to be_valid
+  #     expect(Camper.create(age: 8)).to be_invalid
+  #   end
 
-    it "must have a age between 8 and 18" do
-      expect(Camper.create(name: 'Caitlin', age: 8)).to be_valid
-      expect(Camper.create(name: 'Caitlin', age: 18)).to be_valid
-      expect(Camper.create(name: 'Caitlin', age: 28)).to be_invalid
-      expect(Camper.create(name: 'Caitlin', age: 2)).to be_invalid
-    end
+  #   it "must have a age between 8 and 18" do
+  #     expect(Camper.create(name: 'Caitlin', age: 8)).to be_valid
+  #     expect(Camper.create(name: 'Caitlin', age: 18)).to be_valid
+  #     expect(Camper.create(name: 'Caitlin', age: 28)).to be_invalid
+  #     expect(Camper.create(name: 'Caitlin', age: 2)).to be_invalid
+  #   end
 
-  end
+  # end
 
 end

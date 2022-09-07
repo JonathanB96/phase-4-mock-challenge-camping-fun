@@ -21,16 +21,16 @@ RSpec.describe Signup, type: :model do
   
   end
 
-  describe "validations" do
+  # describe "validations" do
 
-    it "must have a time between 0 and 23" do
-      expect(Signup.create(camper_id: camper.id, activity_id: activity.id, time: 11)).to be_valid
-      expect(Signup.create(camper_id: camper.id, activity_id: activity.id, time: 0)).to be_valid
-      expect(Signup.create(camper_id: camper.id, activity_id: activity.id, time: 23)).to be_valid
-      expect(Signup.create(camper_id: camper.id, activity_id: activity.id, time: 24)).to be_invalid
-      expect(Signup.create(camper_id: camper.id, activity_id: activity.id)).to be_invalid
-    end
+  #   it "must have a time between 0 and 23" do
+  #     expect(Signup.create(camper_id: camper.id, activity_id: activity.id, time: 11)).to be_valid
+  #     expect(Signup.create(camper_id: camper.id, activity_id: activity.id, time: 0)).to be_valid
+  #     expect(Signup.create(camper_id: camper.id, activity_id: activity.id, time: 23)).to be_valid
+  #     expect(Signup.create(camper_id: camper.id, activity_id: activity.id, time: 24)).to be_invalid
+  #     expect(Signup.create(camper_id: camper.id, activity_id: activity.id)).to be_invalid
+  #   end
 
-  end
+  # end
 
 end
